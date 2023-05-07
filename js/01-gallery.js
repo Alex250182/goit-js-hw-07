@@ -31,9 +31,9 @@ imgGallery.addEventListener('click', ev => {
         return
     }
 
-    const selectImg = ev.target.getAttribute('data-source')
+    const selectedImg = ev.target.getAttribute('data-source')
     const instance = basicLightbox.create(`
-    <img src="${selectImg}" width="800" height="600">
+    <img src="${selectedImg}" width="800" height="600">
 `)
 
     instance.show()
